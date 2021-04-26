@@ -1,0 +1,133 @@
+.panel-search, .panel-count{
+  overflow: hidden;
+  padding: 0 5px;
+  margin-bottom: 12px;
+}
+
+.panel-count{
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+
+  .label{
+    font-size: 12px;
+    color: #000;
+  }
+
+  .value{
+    font-size: 14px;
+    color: $base-blue;
+  }
+
+  .inline{
+    font-size: 14px;
+    color: $base-blue;
+  }
+}
+
+.panel-order-details{
+  overflow: hidden;
+  padding: 20px 18px;
+  background: #fff;
+
+  .title{
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .sub-title{
+    font-size: 13px;
+    font-weight: bold;
+    padding-top: 20px;
+  }
+}
+
+ul.table-order-details{
+  padding-top: 12px;
+  li{
+    padding: 1px 0;
+    font-size: 12px;
+    line-height: 14px;
+    position: relative;
+
+    .label, .value{
+      width: 49%;
+      display: inline-block;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .label{color:#787878;}
+    .value{color:#000;}
+
+    .panel-order-confirmation-view{
+      position: absolute;
+      top: -16px;
+      right: -18px;
+      height: 50px;
+      width: 50px;
+    }
+  }
+}
+
+ul.table-customer-details{
+  padding-top: 12px;
+  li{
+    padding: 1px 0;
+    font-size: 12px;
+    line-height: 14px;
+    color:#000;
+
+    .half{
+      width: 49%;
+      display: inline-block;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .full{
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    a{
+      color: $base-blue;
+      text-decoration: none;
+    }
+  }
+}
+
+.bottom-fixed-menu{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom:0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.bottom-fixed-menu-container{
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 50px;
+  z-index: 110;
+  background: #fff;
+  border-top: 1px solid #ededed;
+}
+
+// .bottom-fixed-menu-container .button, .button:hover {
+//   background: transparent !important;
+// }
+
+
+.bottom-fixed-menu button.full {
+  height: 50px;
+  background: $base-blue;
+}

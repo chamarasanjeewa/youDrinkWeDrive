@@ -1,0 +1,204 @@
+.row {
+    margin: 0px 2px 0px 2px
+}
+ion-content{
+    font-family: 'poppins';
+}
+
+.picker-col:nth-child(5) {
+    background: #EFE6E6;
+}
+.picker-col:nth-child(6) {
+    background: #EFE6E6;
+}
+
+.picker-button{
+    margin :0px 5px 0px 5px !important;
+}
+
+.main-view {
+    background-image: url("../assets/images/background.jpg");
+
+    button {
+        border-radius: 0;
+    }
+    button:hover {
+        border-radius: 0;
+    }
+    ion-search {
+        border-radius: 0;
+    }
+    // .header-background {
+    //     ///background-image: "http://youdrinkwedrive.lk/wp-content/uploads/2018/03/banner.jpg";
+    // }
+    .col {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 0px;
+        padding-top: 0px;
+    }
+    .from {
+        width: 40px;
+        margin: 0px 5px 5px 5px;
+    }
+    .to {
+        margin: 0px 5px 5px 5px;
+    }
+    input[type=search] {
+        -webkit-appearance: textfield;
+    }
+    ​​​ ion-datetime {
+        position: relative !important;
+    }
+    .header {
+        position: relative;
+        margin-bottom: 30px;
+        padding-bottom: 40px;
+        .border {
+            margin: 0 auto 0px auto;
+            border-top: 6px solid $base-yellow;
+            position: relative;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 999;
+        }
+        .logo {
+            width: 200px;
+            height: 55px;
+            margin: -2px auto 5px 20%;
+            content: url(../assets/images/logo.png);
+        }
+    }
+    .pickup-time {
+        color: white;
+        font-size: 20px;
+        padding: 6px 2px 0px 2px;
+    }
+    .pickup-time-label {
+        font-size: 15px !important;
+        margin: 0px 5px 5px 21px;
+        font-family: 'poppins'
+    }
+    .calendar {
+        color: white;
+        //width: 5px;
+        color: $base-yellow !important;
+        height: 5px;
+        padding: 10px 2px 0px 2px;
+        float:right;
+    }
+    .timePicker {
+        color: white;
+        //width: 5px;
+        color: $base-yellow !important;
+        height: 5px;
+        margin: 4px -5px 0px -20px;
+        padding: 7px 0px 0px 0px;
+        float:right;
+    }
+    .promo-code {
+        color: white;
+        font-size: 25px;
+        margin: 5px 9px 15px 4px;
+        ion-item {
+            background-color: transparent;
+            ion-input{
+                color:$base-yellow!important;
+            }
+           
+        } 
+    }
+    .estimate {
+        button {
+            background: $base-yellow !important;
+            margin: 5px 5px 5px 0px;
+            width: 150px;
+            height: 50px;
+            font-size: 15px;
+            color: black;
+        }
+        .col {
+            padding-right: 0;
+        }
+        .distance {
+            color: $base-yellow !important;
+            font-size: 20px;
+            margin-top: 20px;
+        }
+    }
+    .personal {
+        padding-top: 20px;
+        margin: 0px 10px 0px 10px !important;
+        ion-item {
+            background-color: transparent;
+        }
+    }
+    .seperator {
+        border-bottom: 1px solid cornflowerblue;
+        height: 4px;
+        width: 100%;
+        margin-left: 5px;
+        margin-right: 5PX;
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+    .personal-details {
+        height: 5px;
+        .label {
+            color: $base-yellow !important;
+            font-size: 12px;
+            font-weight: bold;
+            margin: 0px 5px 0px 5px;
+            height: 100px;
+        }
+        .plus {
+            margin-left: 5px;
+        }
+    }
+    .reserve-driver {
+        margin: 10px 0px 0px 10px;
+        padding: 0px 0px 0px 0px;
+        button {
+            background: $base-yellow !important;
+            color: black;
+            width: 250px;
+            height: 50px;
+            font-size: 15px;
+            margin: 0px 0px 0px 0px;
+        }
+    }
+    .call-driver {
+        background-color: transparent;
+        padding-top: 5px;
+        margin: 10px 5px 10px 100px;
+        width: 65px;
+        height: 65px;
+        content: url("../assets/images/customersupport.png");
+    }
+
+    .gps{
+        background-color: transparent;
+        margin: 14px 10px 17px -22px;
+        width: 35px;
+        height: 44px;
+        border: 1px solid #f0eaea;
+        padding: 11px 3px 7px 3px;
+        content: url("../assets/images/navigation.png");
+    }
+
+}
+
+.picker-md .picker-button{
+    background-color:$base-yellow !important;
+    color:black !important;
+    font-weight: bold;
+   margin: 2px 5px 5px 5px !important
+}
+
+.searchbar-input{
+   border-radius: 0px !important;
+}
+button.picker-button.disable-hover.button.button-ios.button-clear.button-clear-ios{
+background-color:$base-yellow !important;
+color:black !important;}

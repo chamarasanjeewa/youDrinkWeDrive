@@ -1,0 +1,141 @@
+.alert-wrapper {
+    max-width: 280px;
+    border-radius: 2px;
+    background-color: #dfeff9 !important;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+    padding: 20px;
+}
+
+.alert-input {
+    margin: 5px 0 5px 0;
+    border: none !important;
+    color: #000;
+    background: #fff!important;
+    padding: 10px 15px !important;
+    @include border-radius(4px !important);
+}
+
+.alert-input:focus {
+    border: 1px solid $base-blue;
+}
+
+.alert-head {
+    padding: 10px 0;
+    text-align: left;
+  display: none;
+}
+
+.alert-button-group {
+    -webkit-flex-wrap: wrap-reverse;
+    -ms-flex-wrap: wrap-reverse;
+    flex-wrap: wrap-reverse;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    padding: 8px 8px 8px 24px;
+}
+
+.alert-button {
+    position: relative;
+    overflow: hidden;
+    margin: 0 8px 0 0;
+    padding: 10px;
+    border-radius: 2px;
+    font-weight: 500;
+    text-align: right;
+    text-transform: uppercase;
+    color: #387ef5;
+    background-color: transparent;
+}
+
+.alert-button {
+    font-size: 12px !important;
+    letter-spacing: 0.01em!important;
+    background: $base-blue!important;
+    @include border-radius(4px !important);
+    height: 44px!important;
+    color:#fff!important;
+    margin: 0 4px!important;
+}
+
+.yes-alert-button, .cancel-alert-button{
+    width: 100px !important;
+    text-align: center !important;
+}
+
+.alert-input-group {
+    padding:10px 0 12px 0 !important;
+}
+
+.alert-button-group {
+    padding: 0 !important;
+  -webkit-justify-content: center !important;
+  -ms-flex-pack: center !important;
+  justify-content: center !important;
+}
+
+.alert-button-group button:nth-child(2){
+    background: #000 !important;
+}
+
+
+.alert-button .button-inner{
+    -webkit-box-pack: center ;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.alert-message, .alert-input-group {
+  padding: 0 24px 24px 0;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.alert-title {
+  font-size: 22px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.alert-button-group {
+  -webkit-flex-wrap: wrap-reverse;
+  -ms-flex-wrap: wrap-reverse;
+  flex-wrap: wrap-reverse;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: end;
+  justify-content: center;
+}
+
+.alert-md .alert-button .button-inner {
+  -webkit-justify-content: center !important;
+  -ms-flex-pack: center !important;
+  justify-content: center !important;
+}
+
+.alert-md .alert-message {
+  font-size: 14px !important;
+  line-height: 19px !important;
+}
+.alert-md .alert-message, .alert-md .alert-input-group {
+  padding: 0 12px 20px 12px !important;
+  color: #000 !important;
+}
+
+
+.alert-ios .alert-button {
+    min-width: auto !important;
+    width:auto !important;
+}
+
+ion-alert.alert-top {
+    padding-top: 0 !important;
+    -ms-flex-align: center!important;
+	-webkit-align-items: center!important;
+	-webkit-box-align: center!important;
+	align-items: center!important;
+    justify-content: center!important;
+}

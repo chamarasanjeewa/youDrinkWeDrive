@@ -1,0 +1,100 @@
+
+ul.product-card{
+  overflow: hidden;
+  padding: 10px 18px;
+  margin-bottom: 1px;
+  position: relative;
+
+  li{
+    padding:2px 0;
+
+    .label, .value{
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    .label{
+      width: 35%;
+      color:#787878;
+      font-size: 12px;
+    }
+
+    .value{
+      width: 60%;
+      color:#000;
+      font-size: 13px;
+    }
+
+    .value-small{
+      font-size:12px;
+      padding: 3px 0 3px 0;}
+
+    .bold{font-weight: bold;}
+  }
+
+  .panel-product-actions{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 150px;
+    height: 50px;
+  }
+
+  .button-icon-50{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    padding: 0 !important;
+    margin: 0 !important;
+    @include border-radius(0!important);
+    float: right;
+  }
+  .button-icon-del{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    padding: 66 !important;
+    margin: 0 !important;
+    @include border-radius(0!important);
+  }
+
+  &:nth-child(even)
+  {
+    background: #f4f4f4 !important;
+    button.button-icon-50.edit{
+      background: url("../assets/images/icon-edit-50-grey.png") no-repeat center center !important;
+      -webkit-background-size: 50px 50px!important;
+      background-size: 50px 50px!important;
+    }
+    button.button-icon-50.delete{
+      background: url("../assets/images/icon-delete-50-grey.png") no-repeat center center !important;
+      -webkit-background-size: 50px 50px!important;
+      background-size: 50px 50px!important;
+    }
+  }
+
+  &:nth-child(odd)
+  {
+    background: #fff !important;
+    button.button-icon-50.edit{
+      background: url("../assets/images/icon-edit-50-grey.png") no-repeat center center!important;
+      -webkit-background-size: 50px 50px!important;
+      background-size: 50px 50px!important;
+    }
+    button.button-icon-50.delete{
+      background: url("../assets/images/icon-delete-50-grey.png") no-repeat center center !important;
+      -webkit-background-size: 50px 50px!important;
+      background-size: 50px 50px!important;
+    }
+  }
+
+  &:nth-last-child(1){
+    margin-bottom: 50px;
+  }
+
+  &.no-margin-bottom:nth-last-child(1){
+    margin-bottom: 0;
+  }
+}

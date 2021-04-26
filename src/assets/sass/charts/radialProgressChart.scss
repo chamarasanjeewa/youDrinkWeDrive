@@ -1,0 +1,25 @@
+ body {
+   background: white;
+   margin: 0 auto;
+ }
+
+ .container {
+   text-align: center;
+   /*padding: 50%;*/
+ }
+
+ .container div {
+   display: inline-block;
+   padding: 20px;
+   width: 100px;
+ }
+
+ .rbc-center-text {
+   font-family: 'Roboto', 'Myriad Set Pro', 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial;
+   fill: black;
+ }
+
+ .catalogRadialChart .rbc-center-text-line0 {
+   font-size: 55px;
+ }
+

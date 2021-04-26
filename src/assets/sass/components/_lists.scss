@@ -1,0 +1,30 @@
+.list-view-gen.user-list {
+  position: relative;
+  padding: 10px 18px 28px;
+  font-size: 14px;
+  text-transform: none;
+  letter-spacing: 0;
+  overflow: hidden;
+}
+
+.list-view-gen.user-list .actions-panel{
+  position: absolute;
+  bottom: 0;
+  right:4px;
+  height: auto;
+  width: auto;
+}
+
+.list-view-gen.login-as-customer {
+  position: relative;
+}
+
+.list-text{
+  white-space: normal;
+  font-size: 13px;
+}
+
+ .list-view-gen{
+  line-height: 1.29em;
+ }   
+

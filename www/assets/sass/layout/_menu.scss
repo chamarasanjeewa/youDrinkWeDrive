@@ -1,0 +1,85 @@
+ion-menu{
+  bottom: 0;
+  @include box-shadow(-1px, 0, 2px, rgba(0, 0, 0, .2));
+  left: 0;
+  position: fixed;
+  right: 0;
+   top: 60px !important;
+}
+
+ion-menu .scroll-content {
+  margin-top: -10px !important;
+  // margin-top: 0px !important;
+}
+
+.menu-content-wrapper{
+  background: #ededed !important;
+  height: 100%;
+  overflow-y: scroll;
+  position: fixed;
+  width: 100%;
+}
+
+ul.main-menu li.help{
+  padding: 16px 30px;
+}
+ul.main-menu li{
+  border-bottom: 1px solid lightblue !important;
+  padding-bottom: 5px;
+}
+ul.main-menu{
+  
+  button{
+    font-size: 20px;
+    color: darkblue !important;
+    padding: 16px 20px;
+    background: transparent !important;
+    text-transform: none;
+    height: auto;
+   // margin: 20;
+    letter-spacing: 0;
+    font-weight: normal;
+    text-align: right !important;
+    font-family: inherit;
+   
+  }
+}
+
+button.menu{
+  padding:20px 8px 7px 0px !important;
+}
+ul.main-menu .button, .button:hover {
+    background: transparent !important;
+    font-size: 15px;
+    letter-spacing: 0;
+    border-radius: 0;
+    -ms-box-shadow: 0 0 0 0 inset;
+    -o-box-shadow: 0 0 0 0 inset;
+    box-shadow: 0 0 0 0 inset;
+}
+
+.button-help{
+  color: #000;
+  display: inline-block;
+  font-size: 15px;
+  text-decoration: none;
+  width: auto;
+
+  span{
+    display: inline-block;
+    float: left;
+    margin-right: 10px;
+  }
+
+  .icon{
+    background: $base-blue;
+    @include border-radius(19px);
+    height: 37px;
+    width: 37px;
+  }
+
+  .help-text{
+    padding-top: 11px;
+    width: auto;
+  }
+}

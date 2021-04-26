@@ -1,0 +1,264 @@
+/*--------General Table----------*/
+.table-catalog .table-catalog-row{
+  ul{
+    width: 100%;
+    display: table;
+    table-layout:fixed;
+
+    li{
+      display: table-cell;
+      text-align: left;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      box-sizing: border-box;
+      color: #000;
+      padding:5px 13px;
+      font-size: 12px;
+      vertical-align: middle;
+      border-left: 1px solid #dbdbdb;
+
+      &:first-child{
+        width:45%;
+        padding-left:0;
+        border-left: none;
+      }
+      &:nth-child(2){width:33%;}
+      &:last-child{width:22%;}
+
+      &.no-border{border-left: none;}
+    }
+  }
+}
+
+
+
+
+  /*--------Table for New CVs----------*/
+
+.table-catalog .catalog-header{
+  display: block;
+  width:73%;
+  letter-spacing: 0.07em;
+  padding-bottom: 10px;
+  padding-left:0;
+
+  .title{
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .date{
+    font-size: 11px;
+    font-weight: normal;
+    letter-spacing: 0;
+    padding-top: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+}
+
+/*--------Table Gen Small---------*/
+
+div.table-general-small{
+  font-size: 12px;
+
+  ul{
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+
+    li{
+      display: table-cell;
+      padding: 3px 16px;
+      white-space: normal;
+    }
+
+    li:first-child{
+      padding:3px 0;
+      color:#787878;
+    }
+  }
+
+}
+
+div.table-general-small.profile{
+  ul li{
+    @include list-columns(35%,70%);
+  }
+}
+
+
+div.table-general-small.profile.companies{
+  ul {
+    margin-bottom: 8px;
+  }
+  ul li{
+    height: auto;
+    line-height: 14px;
+    padding: 0 16px;
+    vertical-align: middle;
+    @include list-columns(60%,40%);
+    &:first-child{
+      color:#000;
+      padding: 0;
+    }
+  }
+
+  .company-name{
+    height: auto;
+  }
+
+  .up, .down{
+    height: 20px;
+    width: 20px;
+    background:url(../assets/images/arrow-up-down.png) no-repeat center center;
+    background-size: 20px 40px;
+    background-position: 0 0;
+  }
+
+  .down{
+    background-position: 0 -20px;
+  }
+
+}
+
+
+/*--------Table Product Details----------*/
+
+div.table-product-details{
+  font-size: 12px;
+  border-top: 1px solid rgba(0,0,0,.2);
+  margin-top: 10px;
+
+  ul:first-child li{
+    padding-top: 15px;
+  }
+
+  ul{
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li{
+      display: table-cell;
+      padding: 3px 16px;
+      border-right: 1px solid rgba(0,0,0,.2);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    li:first-child{
+      padding:3px 0;
+      color:#787878;
+    }
+
+    li:last-child{
+      border-right: none;
+    }
+  }
+
+  .status{
+    color:$base-blue;
+  }
+}
+
+/*Table for Product List View*/
+
+div.table-product-details.list-view{
+  border-top: none;
+
+  ul li{
+    @include list-columns(50%, 50%);
+  }
+}
+
+/*Table for Product List View*/
+
+div.table-product-details.list-view-no-padding{
+  margin-top: 0;
+  border-top: none;
+
+  ul:first-child li{
+    padding-top: 0;
+  }
+
+  ul li{
+    @include list-columns(50%, 50%);
+  }
+}
+
+
+div.table-general-small{
+  font-size: 12px;
+
+  ul{
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+
+    li{
+      display: table-cell;
+      padding: 3px 16px;
+      white-space: normal;
+    }
+
+    li:first-child{
+      padding:3px 0;
+      color:#787878;
+    }
+  }
+}
+
+
+div.table-small{
+  font-size: 12px;
+
+  ul:first-child li{
+    padding-top: 15px;
+  }
+  ul{
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+    list-style: none;
+
+    li{
+      display: table-cell;
+      padding: 3px 16px;
+      border-right: 1px solid rgba(0,0,0,.1);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    li:first-child{
+      padding:3px 0;
+      color:#787878;
+    }
+
+    li:last-child{
+      border-right: none;
+    }
+  }
+}
+
+
+div.table-small.invoice-details{
+  border-bottom: 1px solid rgba(0,0,0,.1);
+
+  ul:last-child li{
+    padding-bottom: 15px;
+  }
+
+}

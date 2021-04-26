@@ -1,0 +1,269 @@
+ion-header{
+  height: 60px;
+   background: $base-blue;
+}
+
+ /*.platform-ios.platform-cordova:not(.fullscreen) .custom {
+margin-top: 20px;
+}*/
+
+ion-header.header-ios{
+  height: 60px;
+  background:$base-blue;
+  //padding-top: 15px;
+}
+
+ion-header::after, [tabsPlacement="top"] > ion-tabbar::after, ion-footer::before, [tabsPlacement="bottom"] > ion-tabbar::before {
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background-image:none;
+  content: "";
+}
+
+.header-md::after{
+  display: none !important;
+}
+
+ion-header.custom-back-navigation{
+
+  .toolbar {
+    padding: 0;
+    min-height: 70px;
+  }
+
+  .toolbar-background {
+    border:none;
+    background: $base-blue;
+  }
+
+  .toolbar-title {
+    padding: 0 12px 0 0;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  .bar-button-default {
+    opacity: 1;
+    filter: alpha(opacity=100);
+  }
+  .back-button-icon {
+    font-size: 2rem;
+  }
+}
+
+.header-top{
+  width: 100%;
+  height: 44px;
+}
+.sub-name{
+  color:white;
+  font-size:12px;
+  margin:5px 0px 0px 5px ;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  word-wrap: normal;
+  width: 100%;
+  
+}
+
+.header-bottom{
+  width: 100%;
+  height: 26px;
+  //border-top: 1px solid #00287a;
+  background-color:$base-blue;
+
+  .username-panel{
+    padding: 6px 18px 0 18px;
+    font-size: 12px;
+
+    .username, .login-as-customer{
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      word-wrap: normal;
+      width: 100%;
+    }
+    .login-as-customer {
+      float: right;
+      color: white;
+      @include opacity(.8);
+      text-align: right;
+    }
+  }
+}
+
+.logo-header{
+  position :relative;
+
+  img{width:40px;height:40px; display: inline-block;}
+
+  .logo-text{
+    display: inline-block;
+    font-size: 18px;
+    padding-left: 35px;
+    padding-top: 4px;
+    -webkit-text-fill-color: white;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    position:absolute;
+   margin: 5px 0px 0px 20px;
+   padding-bottom: 5px;
+  }
+  .logo-sub-text{
+    position:absolute;
+    display: inline-block;
+    font-size: 12px;
+    padding-left: 38px;
+    -webkit-text-fill-color: white;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 30px 5px 5px 18px;
+    padding-bottom: 5px;
+    padding-top: 3px !important;
+  }
+}
+.logo{
+  float:right;
+  height:20px;
+  position :absolute;
+  width: 35px;
+  margin: 10px 0px 0px 10px;
+}
+
+
+button.menu{
+  position: absolute;
+  top:0; right:0;
+  width: auto;
+  height: 0px;
+  padding: 3px 8px 3px 0px !important;
+  margin: 0;
+  box-sizing: border-box;
+  @include border-radius(0);
+   background-color:transparent !important;
+   
+
+  span{
+    height:2px;
+    width:16px;
+    background: #fff;
+    margin: 5px 0 0 0;
+    display: block;
+
+    &:first-child{
+      margin:  0;
+    }
+  }
+}
+
+button.bar-buttons-ios{
+  position: absolute;
+  // top:15px; 
+  right:0;
+  width: auto;
+  height: 44px;
+  padding: 9px 16px 7px 16px;
+  margin: 0;
+  box-sizing: border-box;
+  @include border-radius(0);
+  background: $base-blue !important;
+
+  span{
+    height:2px;
+    width:16px;
+    background: #fff;
+    margin: 5px 0 0 0;
+    display: block;
+
+    &:first-child{
+      margin:  0;
+    }
+  }
+}
+
+
+button.order-buttons{
+  width: 100%;
+  height: 66px;
+  padding: 12px 0 0 18px;
+  margin: 0;
+  @include border-radius(4px);
+  background: #f4f4f4 !important;
+  text-align: left;
+
+  &:hover{
+    background: #f4f4f4 !important;
+  }
+
+  span{
+    display: block;
+  }
+
+  .order-title{
+    width: 100%;
+    font-size: 11px;
+    color:#8f8f8f;
+    letter-spacing: 0.06em;
+  }
+
+  .order-value{
+    width: 100%;
+    font-size: 28px;
+    color:#000;
+    letter-spacing: -0.08em;
+    padding-top: 5px;
+  }
+}
+
+
+ion-header.custom-back-navigation .back-button-icon {
+  font-size: 2.8rem !important;
+}
+
+
+.bar-button-default-ios, .bar-button-default.bar-button-ios-default, .bar-button-clear-ios-default {
+    color: #ffffff !important;
+    background-color: transparent;
+    opacity: 1;
+}
+
+.back-button-ios, .bar-button-ios{
+  top: 0px !important;
+}
+
+///////////////////////////////////Login News Page Header Style/////////////////////////////////////////
+ion-header.login-news-page{
+  height: 45px;
+  background: $base-blue;
+  text-align: center;
+
+  ion-title{
+    div{
+        ion-icon{
+          float: left;
+        }
+    }
+  }
+}
+
+ion-header.header-ios.login-news-page{
+  height: 50px;
+  background: $base-blue;
+}
+
+.login-news-page.header{
+  .title{
+      .toolbar-title{
+          color: #fff;
+          padding: 14px 10px;
+      }
+  }
+}

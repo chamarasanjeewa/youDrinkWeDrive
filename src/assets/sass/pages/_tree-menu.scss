@@ -1,0 +1,80 @@
+ul.tree-menu-main{
+
+  li{
+    position: relative;
+    font-size: 14px;
+    font-weight: normal;
+    height: auto;
+    a{
+      display: block;
+      color: #000;
+      padding: 13px 30px 13px 20px;
+      border-bottom: 1px solid #d9d9d9;
+
+      &.open{
+        font-weight: bold;
+        border-bottom:none;
+      }
+    }
+
+    a.expand:after{
+      position: absolute;
+      content: '';
+      display: block;
+      top:12px;
+      right:12px;
+      height: 16px;
+      width:16px;
+      @include border-radius(2px);
+      background:$base-blue url(../assets/images/icon-collapse-plus-16.png) no-repeat center center;
+      background-size: 16px 16px;
+    }
+
+    a.expand.active:after{
+      background:$base-blue url(../assets/images/icon-collapse-minus-16.png) no-repeat center center;
+      background-size: 16px 16px;
+    }
+
+    a.expand.active{
+      font-weight: bold;
+      border-bottom:none;
+    }
+  }
+
+  div.level-1 ul li a, div.level-2 ul li a, div.level-3 ul li a, div.level-4 ul li a, div.level-5 ul li a, div.level-6 ul li a, div.level-7 ul li a {
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+  }
+
+  div ul node:last-child li a {
+    /*border-bottom: none;*/
+  }
+
+
+  /*a.level-1{background:#f1faff;}
+
+  a.level-2{background:#dcf2ff;}
+
+  a.level-3{background:#c7eaff;}
+
+  a.level-4{background:#aadffe;}
+
+  a.level-5{background:#93d6fe;}
+
+  a.level-6{background:#7ccefe;}
+
+  a.level-7{background:#65c5fe;}*/
+
+   a.level-7{background:#9f9f9f;}
+
+  a.level-6{background:#adadad;}
+
+  a.level-5{background:#bdbdbd;}
+
+  a.level-4{background:#c8c8c8;}
+
+  a.level-3{background:#d5d5d5;}
+
+  a.level-2{background:#e3e3e3;}
+
+  a.level-1{background:#ededed;}
+}

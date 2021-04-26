@@ -1,0 +1,143 @@
+ion-content.login-scroll .scroll-content{
+  margin-top: 0 !important;
+}
+
+.wrapper-login{
+  max-width: 768px;
+  padding:70px 10% 0;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.panel-login-logo{
+  padding: 0 0 20px 0;
+
+  img{
+    width:188px;
+    height:64px;
+    background: $base-blue;
+  }
+
+  .logo-text{
+    font-size: 30px;
+    padding-top: 8px;
+
+  }
+
+  .logo-sub-text{
+    font-size: 17px;
+    padding-top: 50px;
+    color: #535353;
+  }
+
+  .logo-plain-text{
+    font-size: 14px;
+    padding-top: 9px;
+    color: #969696;
+  }
+}
+
+.panel-version{
+  padding-top:8px;
+  text-align: center;
+}
+
+ion-list > .item:first-child, ion-list > .item-wrapper:first-child .item {
+  border-top: 0;
+}
+
+ion-list .item .item-inner {
+  border-bottom: 0;
+}
+
+.item {
+  position: relative;
+  padding-right: 0!important;
+  padding-left:0 !important;
+  font-size: 14px;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  color: #000;
+  background-color: #fff;
+  box-shadow: none;
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.input-cover {
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.item-input ion-label, .item-select ion-label, .item-datetime ion-label {
+  color: $base-blue !important;
+  text-transform: uppercase !important;
+}
+
+.input-has-focus ion-label[floating] {
+  color: $base-blue; }
+
+ion-label[floating] {
+  padding-left: 15px;
+}
+
+ion-input [type] {
+  padding-left: 13px;
+}
+
+ion-item {position: relative;}
+
+ion-label[stacked] .login-icon {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+}
+
+.icons-login{
+  height: 24px;
+  width: 24px;
+  position: absolute;
+  right: 6px;
+  top: 21px;
+  z-index: 1000;
+}
+
+.error{
+  height: 15px;
+  padding: 0 15px 0 12px;
+  border: none;
+  font-size: 13px;
+  color:red;
+  display: none;
+}
+
+.error.show{
+  display: block;
+}
+
+.notification-msg{
+  height: auto;
+  padding: 0 15px 0 12px;
+  border: none;
+  font-size: 13px;
+  line-height: 17px;
+  color: #6f6f6f;
+  display: none;
+  text-align: center;
+}
+
+.notification-msg.show{
+  display: block;
+}
+
+.login-error-title{display: none;}
+.login-error-title.show{display: block;}
+
+
+.errorPage{
+  height: auto;
+  text-align: center;
+  padding-top: 100px;
+  border: none;
+  font-size: 25px;
+  color:red;
+}

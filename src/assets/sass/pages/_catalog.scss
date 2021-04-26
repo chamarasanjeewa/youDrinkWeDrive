@@ -1,0 +1,113 @@
+.panel-catalog-info{
+  width: 100%;
+  overflow: hidden;
+  padding: 10px 18px;
+  background:#c7eaff;
+  box-sizing: border-box;
+}
+
+.wrapper-tree-menu{
+  width: calc(100% + 32px);
+  margin-left: -16px;
+  overflow: hidden;
+  display: block;
+}
+
+.panel-catalog .catalog{
+  position: relative;
+  width: 100%;
+  padding: 20px 18px 30px 18px;
+  box-sizing: border-box;
+}
+
+.panel-catalog div.catalog:nth-child(odd){
+  background:#fff
+}
+.panel-catalog div.catalog:nth-child(even){
+  background:#f4f4f4;
+}
+
+.panel-catalog.without-news div.catalog:nth-child(odd){
+  background:#f4f4f4
+}
+.panel-catalog.without-news div.catalog:nth-child(even){
+  background:#fff;
+}
+
+.panel-catalog .catalog .chart-circle {
+  position: absolute;
+  right: 17px;
+  top: 23px;
+  height: 66px;
+  width: 66px;
+  z-index: 10000;
+}
+
+.panel-catalog .chart-circle canvas {
+  display: block;
+  height: 66px !important;
+  width: 66px !important;
+  float: right;
+}
+.panel-catalog .catalog .chart-circle label {
+  position: absolute;
+  width: 46px;
+  top: 27px;
+  right: 9px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.panel-catalog .icon{
+  position: absolute;
+  bottom: 10px;
+  right:18px;
+  width: 24px;
+  height: 24px;
+  @include opacity(.26);
+}
+
+.panel-catalog .icon.chart-line{
+  background: url(../assets/images/icon-chart-24.png) no-repeat center center;
+  background-size: 24px 24px;
+}
+
+.panel-catalog .icon.chart-pie{
+  background: url(../assets/images/icon-pie-24.png) no-repeat center center;
+  background-size: 24px 24px;
+}
+
+.panel-catalog linechart canvas{
+  margin-bottom: 5px;
+  height: 127px !important;
+}
+
+.panel-catalog .panel-spinner{
+  width: 100%;
+  height: 132px !important;
+  position: relative;
+
+  scroll-content {
+    margin-top: 0!important;
+  }
+
+  .spinner-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 50;
+    background: transparent;
+  }
+}
+
+.panel-catalog .content-ios {
+  color: #000;
+  background-color: transparent !important;
+}
+
+.catalog-content-wrapper{
+  height:132px !important;
+}

@@ -1,0 +1,102 @@
+@mixin respond-to($media) {
+  @if $media == mobile {
+    @media only screen and (max-width: 568px) { @content; }
+  }
+  @else if $media == phablet {
+    @media only screen and (max-width: 767px) { @content; }
+  }
+  @else if $media == tabs {
+    @media only screen and (max-width: 1023px) { @content; }
+  }
+  @else if $media == desktop {
+    @media only screen and (max-width: 1280px) { @content; }
+  }
+  @else if $media == xlarge {
+    @media only screen and (max-width: 1600px) { @content; }
+  }
+  @else if $media == xxlarge {
+    @media only screen and (min-width: 1601px) { @content; }
+  }
+}
+
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity=$opacity-ie); //IE8
+}
+
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+@mixin box-shadow($top, $left, $blur, $color, $inset:"") {
+      -webkit-box-shadow:$top $left $blur $color #{$inset};
+         -moz-box-shadow:$top $left $blur $color #{$inset};
+          -ms-box-shadow:$top $left $blur $color #{$inset};
+           -o-box-shadow:$top $left $blur $color #{$inset};
+              box-shadow:$top $left $blur $color #{$inset};
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+       -o-border-radius: $radius;
+          border-radius: $radius;
+}
+
+
+// generic transform
+@mixin transform($transforms) {
+  -moz-transform: $transforms;
+  -o-transform: $transforms;
+  -ms-transform: $transforms;
+  -webkit-transform: $transforms;
+  transform: $transforms;
+}
+// rotate
+@mixin rotate ($deg) {
+  @include transform(rotate(#{$deg}deg));
+}
+// scale
+@mixin scale($scale) {
+  @include transform(scale($scale));
+}
+// translate
+@mixin translate ($x, $y) {
+  @include transform(translate($x, $y));
+}
+// skew
+@mixin skew ($x, $y) {
+  @include transform(skew(#{$x}deg, #{$y}deg));
+}
+//transform origin
+@mixin transform-origin ($origin) {
+  moz-transform-origin: $origin;
+  -o-transform-origin: $origin;
+  -ms-transform-origin: $origin;
+  -webkit-transform-origin: $origin;
+  transform-origin: $origin;
+}
+
+/*-----------Table Mixin-----------*/
+
+@mixin li-width($col, $width) {
+    #{$col} {
+        width: $width;
+    }
+}
+
+@mixin list-columns($widths...) {
+    $n: 1;
+    $var: "&:nth-child(" + $n + ")";
+    @each $width in $widths {
+        @include li-width($var, $width);
+        $n: $n + 1;
+        $var: "&:nth-child(" + $n + ")";
+    }
+}

@@ -1,0 +1,23 @@
+ion-footer.login-news-page{
+    height: 40px;
+    padding: 6px 0px;
+    background: $base-blue;
+    text-align: center;
+
+    ion-title{
+        div{
+            ion-icon{
+                padding-right: 10px; 
+            }
+        }
+    }
+}
+
+.login-news-page.footer{
+    .title{
+        .toolbar-title{
+            line-height: initial;
+            color: #fff;
+        }
+    }
+}

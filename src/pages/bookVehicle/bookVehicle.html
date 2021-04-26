@@ -1,0 +1,103 @@
+<spinner [isRunning]="spinnerParams"></spinner>
+<ion-content class="main-view">
+	<div class="header">
+		<div class="border"></div>
+		<div class="logo">
+			<h1>you <span>drink</span> we <span>drive</span></h1>
+		</div>
+	</div>
+	<ion-row>
+		<ion-col col-11>
+			<autoComplete class="from" placeholder="From where?" [(ngModel)]="searchFrom" (callback)="from($event[0])" key="AIzaSyCDY5NB991GzLR9RMnH2usCDgpONPdq2Mo"></autoComplete>
+		</ion-col>
+		<ion-col col-1>
+			<div class="gps" (click)="getCurrentPosition()"></div>
+		</ion-col>
+	</ion-row>
+	<ion-row>
+		<ion-col col-12>
+			<autoComplete class="to" placeholder="Where to?" [(ngModel)]="searchTo" (callback)="to($event[0])" key="AIzaSyCDY5NB991GzLR9RMnH2usCDgpONPdq2Mo"></autoComplete>
+		</ion-col>
+	</ion-row>
+	<ion-row>
+		<ion-label class="pickup-time-label" label-ios-text-color="black">PICKUP TIME</ion-label>
+	</ion-row>
+	<ion-grid>
+		<ion-row>
+			<ion-col col-10>
+				<!-- <ion-datetime name="datep" (ionChange)="dateChanged($event)" class="pickup-time" min={{minDate}} max={{maxDate}} #picker displayFormat=" DD  | MMM | YYYY" [(ngModel)]="startDate"></ion-datetime> -->
+				<div (click)="openPicker()" class="pickup-time">{{displayDate}}</div>
+			</ion-col>
+			<ion-col col-2>
+				<div (click)="openPicker()" class="calendar" name="calendar">(Edit)</div>
+			</ion-col>
+			<!-- <ion-col col-4>
+				<ion-datetime name="timeP" (clicked)="timeChanged($event)" class="pickup-time"  minuteValues="0,15,30,45" #timepicker displayFormat="hh:mm A" [(ngModel)]="startDate"></ion-datetime>
+			</ion-col>
+			<ion-col col-1>
+				<div (click)="timepicker.open()" class="timePicker" name="calendar">(Edit)</div>
+			</ion-col> -->
+		</ion-row>
+	</ion-grid>
+	<ion-list class="promo-code">
+		<ion-item>
+			<ion-input  [(ngModel)]="promoCode" type="text" placeholder="Promo code (if any)"></ion-input>
+		</ion-item>
+	</ion-list>
+	<ion-grid>
+		<ion-row class="estimate">
+			<ion-col>
+				<button  ion-button (click)="getEstimate()">Estimate ></button>
+			</ion-col>
+			<ion-col *ngIf="distanceCost" >
+				<ion-label class="distance">{{distance}} / {{distanceCost}} Rs</ion-label>
+			</ion-col>
+		</ion-row>
+	</ion-grid>
+	<ion-row>
+		<div class="seperator" id="seperator"> </div>
+	</ion-row>
+
+	<ion-grid>
+		<ion-row>
+			<ion-col class="personal-details" (click)="togglePersonal()">
+				<ion-label class="label">PERSONAL DETAILS
+					<span class="plus" *ngIf="!showPersonalDetails">+</span>
+					<span class="plus" *ngIf="showPersonalDetails">-</span>
+				</ion-label>
+			</ion-col>
+		</ion-row>
+	</ion-grid>
+	<ion-list *ngIf="showPersonalDetails" class="personal">
+		<ion-item>
+			<ion-input placeholder="Name" [(ngModel)]="name" (ionChange)="setName()"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-input type="tel" [(ngModel)]="telNo" placeholder="Phone number" (ionChange)="setTel()"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-input type="email" [(ngModel)]="email" placeholder="Email address" (ionChange)="setEmail()"></ion-input>
+		</ion-item>
+	</ion-list>
+	<ion-grid class="reserve-driver">
+		<ion-row>
+			<ion-col align-self-start width-95>
+				<div>
+					<button  (click)="reserveDriver()" ion-button class="reserve-driver">Reserve your driver</button>
+				</div>
+			</ion-col>
+			<ion-col width-5>
+			</ion-col>
+		</ion-row>
+	</ion-grid>
+	<ion-grid>
+		<ion-row>
+			<ion-col width-95>
+				<div></div>
+			</ion-col>
+			<ion-col width-5>
+				<div class="call-driver" (click)="CallNumber()"></div>
+			</ion-col>
+		</ion-row>
+	</ion-grid>
+</ion-content>

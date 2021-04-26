@@ -1,0 +1,61 @@
+
+ul.invoice-list-items{
+  li{
+    font-size: 12px;
+    padding: 11px 18px;
+    float:left;
+  }
+  span{
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+  }
+
+  .label{
+    width: 50px;
+    color:#787878;
+  }
+
+  .value{
+    width: calc(100% - 55px);
+    box-sizing: border-box;
+  }
+}
+
+ul.invoice-list-items:nth-child(even){
+  background: #f5f5f5;
+}
+
+ul.invoice-list-items:nth-child(odd){
+  background: #fff;
+}
+
+ul.alphabet{
+  li{
+    font-size: 12px;
+    padding: 11px 18px;
+    margin-top:20px;
+    background-color: $base-blue;
+  }
+}
+
+.tamil-alphabet ul{
+  
+    list-style: none;
+    padding-top: 20px;
+    li{
+      margin:5 px;
+      padding: 5px;
+      display: inline;
+  
+      button{
+        width:30px;
+        height:30px;
+        background-color: greenyellow;
+      }
+    }
+    
+  }
+  

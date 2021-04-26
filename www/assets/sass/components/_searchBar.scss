@@ -1,0 +1,48 @@
+.searchbar-input {
+  padding: 22px 15px 22px 40px !important;
+  height: 14px!important;
+  font-size: 14px !important;
+  font-weight: 400;
+  line-height: 14px !important;
+  color: #000;
+  background: #f0f0f0 !important;
+  box-shadow: none !important;
+  letter-spacing: 0.02em !important;
+  @include border-radius(4px !important);
+
+}
+
+.searchbar-input:focus{
+  border: 1px solid $base-blue;
+}
+
+ion-searchbar {
+  padding: 0 !important;
+  background: inherit;
+}
+
+.searchbar-clear-icon{
+  display: none !important;
+}
+
+.searchbar-search-icon {
+  top: 13px;
+  left: 12px !important;
+  @include opacity(0.3);
+}
+
+.platform-ios.platform-cordova:not(.fullscreen) .searchbar-search-icon {
+    top: 16px;
+    left: 12px;
+    opacity: 0.3;
+    filter: alpha(opacity=30);
+}
+
+
+.searchbar-ios .searchbar-search-icon {
+    top: 16px !important;
+}
+
+.searchbar-ios {
+    background: rgb(255, 255, 255) !important;
+}

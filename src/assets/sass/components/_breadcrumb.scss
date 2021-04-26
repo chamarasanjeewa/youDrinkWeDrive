@@ -1,0 +1,31 @@
+.panel-breadcrumb{
+  width: 100%;
+  padding: 15px 18px;
+  background:#eff9ff;
+  box-sizing: border-box;
+  font-size: 12px;
+  vertical-align: middle;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+
+  .breadcrumb-list{
+    display: inline-block;
+
+    &:last-of-type{
+      color: $base-blue;
+      span{display: none;}
+    }
+  }
+
+  span{
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    margin: -2px 1px 0 1px;
+    background: url(../assets/images/icon-arrow-10.png) no-repeat center center;
+    background-size: 10px 10px;
+    vertical-align: middle;
+  }
+}
+

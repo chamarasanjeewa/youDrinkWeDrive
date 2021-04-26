@@ -1,0 +1,382 @@
+.form-wrap{
+  position: relative;
+  height: 60px;
+  margin-bottom: 30px;
+}
+
+.form-control{
+  height: 40px;
+  background:none;
+  border-radius: 0;
+  border: none;
+  border-bottom: 1px solid #b9c2c4;
+  box-sizing: border-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 18px;
+  padding: 0 10px 0 0 !important;
+  margin-bottom: 16px;
+  @include box-shadow(inset, 0,0, 0, rgba(0,0,0, 0));
+
+  &.no-margin{
+    margin-bottom: 0!important;
+  }
+
+  &.white{color:#fff;}
+  &.db-search{
+    background: url('../images/icon-search.png') no-repeat top right;
+    background-size: 40px 40px;
+    border-bottom:none;
+    text-align: right;
+    padding-right: 40px !important;
+  }
+
+  @include respond-to(mobile){
+    font-size: 16px;
+    padding: 8px 15px;
+  }
+}
+
+.form-control::-moz-placeholder {
+  line-height: 40px;
+  font-size: 14px;
+  color: #9eb1b8;
+  font-weight: normal;
+  opacity: 1;
+}
+.form-control:-ms-input-placeholder {
+  line-height: 40px;
+  font-size: 14px;
+  color: #9eb1b8;
+  font-weight: normal;
+}
+.form-control::-webkit-input-placeholder {
+  line-height: 40px;
+  font-size: 14px;
+  color: #9eb1b8;
+  font-weight: normal;
+}
+
+.form-control:focus {
+  outline: 0;
+}
+
+/*-----------------------------------------------*/
+
+.form-control-white{
+  width: 100%;
+  height: 40px;
+  background:#fff;
+  border: none;
+  box-sizing: border-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 14px;
+  color:#8b9aa1;
+  padding: 0 25px !important;
+  @include border-radius(5px);
+  @include box-shadow(inset, -1px, -1px, 0, rgba(0,0,0, .13));
+}
+
+.form-control-white::-moz-placeholder {
+  line-height: 40px;
+  font-size: 14px;
+  color: #9eb1b8;
+  font-weight: normal;
+  opacity: 1;
+}
+.form-control-white:-ms-input-placeholder {
+  line-height: 40px;
+  font-size: 14px;
+  color: #9eb1b8;
+  font-weight: normal;
+}
+.form-control-white::-webkit-input-placeholder {
+  line-height: 40px;
+  font-size: 14px;
+  color: #9eb1b8;
+  font-weight: normal;
+}
+
+.form-control-white:focus {
+  @include box-shadow(inset, -1px, -1px, 0, rgba(0,0,0, .13));
+  outline: 0;
+}
+
+textarea{
+  width: 100%;
+  background:#fff;
+  border: none;
+  box-sizing: border-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 14px;
+  color:#8b9aa1;
+  padding: 15px 25px !important;
+  @include border-radius(5px);
+  @include box-shadow(inset, -1px, -1px, 0, rgba(0,0,0, .13));
+
+  @include respond-to(mobile){
+    padding: 8px 15px;
+  }
+}
+
+textarea::-moz-placeholder {
+  font-size: 14px;
+  color: #9eb1b8;
+  font-weight: normal;
+  opacity: 1;
+}
+textarea:-ms-input-placeholder {
+  font-size: 14px;
+  color: #9eb1b8;
+  font-weight: normal;
+}
+textarea::-webkit-input-placeholder {
+  font-size: 14px;
+  color: #9eb1b8;
+  font-weight: normal;
+}
+
+textarea:focus {
+  outline: 0;
+}
+
+input:focus {
+  outline: 0;
+  -webkit-box-shadow: none!important;
+  box-shadow: none!important;
+}
+
+.label-form{
+  position: absolute;
+  display: block;
+  font-size: 18px;
+  top:11px;
+
+  &.white{color:#fff;}
+  @include transition(all 300ms ease-in-out);
+
+  @include respond-to(mobile){
+    font-size: 16px;
+  }
+}
+
+input:focus + .label-form{
+  top:-12px;
+  @include opacity(.5);
+  font-size: 14px;
+
+  @include respond-to(mobile){
+    top:-10px;
+    font-size: 12px;
+  }
+}
+
+.not-empty{
+  top:-12px;
+  @include opacity(.5);
+  font-size: 14px;
+
+  @include respond-to(mobile){
+    top:-10px;
+    font-size: 12px;
+  }
+}
+
+select{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 40px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  border: none;
+  box-sizing: border-box;
+  font-size: 14px;
+  color:#8b9aa1;
+  padding: 0 25px !important;
+  background: #fff url('../images/icon-arrow-combo.png') no-repeat;
+  background-size: 40px 40px;
+  background-position: right top;
+  @include border-radius(5px);
+  @include box-shadow(inset, -1px, -1px, 0, rgba(0,0,0, .13));
+
+  &:focus {
+    outline: 0;
+    border: none;
+  }
+
+  @include respond-to(mobile){
+    padding: 8px 30px 8px 15px;
+  }
+}
+
+select:required:invalid {
+  color: red;
+}
+
+option[value=""][disabled] {
+  color: red;
+}
+
+select option
+{
+  line-height: 200%;
+}
+
+.form-control:focus {
+  outline: 0;
+}
+
+.has-error .form-control {
+  border-color: #e0e0e0;
+  -webkit-box-shadow: none!important;
+  box-shadow: none!important;
+
+  &:focus{
+    outline: 0;
+  }
+}
+
+.error-message{
+  font-size: 14px;
+  text-align: left;
+  margin-top:-8px;
+  margin-left:1px;
+}
+
+.custom-focus{
+  input {
+    box-shadow:none;
+    position: relative;
+    z-index:10;
+
+    &:last-child {
+      margin-top: -1px;
+    }
+
+    &:focus {
+      z-index:11;
+    }
+  }
+}
+
+.checkbox input[type="checkbox"]{
+  width: 18px;
+  height:18px;
+  margin-left: 0!important;
+
+  label span{
+    display: block!important;
+    padding-left: 10px!important;
+    font-size: 16px!important;
+    margin-top: 6px!important;
+    font-size: 16px!important;
+    float: left!important;
+  }
+}
+
+.radio label, .checkbox label {
+  padding-left: 25px;
+  padding-top: 6px;
+  cursor: default;
+}
+
+
+/*------Styling Multiple Selection Combo------*/
+.checkbox-text{
+  font-size: 13px;
+  font-family: 'Gotham-Book';
+  font-weight: normal;
+  color: #000;
+  padding-left:10px;
+}
+
+.multiselect {
+  width: 180px;
+  display: inline-block;
+}
+.selectBox {
+  position: relative;
+}
+.selectBox select {
+  width: 100%;
+}
+.overSelect {
+  position: absolute;
+  left: 0; right: 0; top: 0; bottom: 0;
+}
+#checkboxes {
+  display: none;
+  position: absolute;
+  z-index: 500;
+  background: #d5dbe0;
+  width: 180px;
+  padding: 5px 0;
+
+}
+#checkboxes label {
+  display: block;
+  padding: 5px;
+
+  input{
+    display: inline-block;
+  }
+
+  div{
+    display: inline-block;
+    padding-left: 5px;
+  }
+}
+#checkboxes label:hover {
+  background-color: #1e90ff;
+}
+
+
+
+.form-input{
+  width: 100%;
+  margin: 5px 0 5px 0;
+  border: none;
+  color: #000;
+  padding: 10px 0;
+  @include border-radius(4px);
+
+  &.white{
+    background: #fff;
+  }
+
+  &.small{
+    width: 40%;
+  }
+}
+
+.form-input:focus {
+  border: 1px solid $base-blue;
+}
+
+.form-group-gen{
+  margin-bottom: 12px;
+
+  label{
+    display: block;
+    font-size: 14px;
+    padding-bottom: 4px;
+  }
+
+  &.no-margin{
+    margin: 0;
+  }
+
+}
+
+.form-error{
+  font-size:13px;
+  color:red;
+}

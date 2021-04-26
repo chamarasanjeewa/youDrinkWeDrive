@@ -1,0 +1,308 @@
+.button, .button:hover{
+  background: $base-blue !important;
+  font-size: 18px;
+  letter-spacing: .08em;
+  @include border-radius(5px);
+  @include box-shadow(0, 0, 0, 0, inset);
+}
+
+button.login{
+  height: 50px;
+  color: #fff;
+}
+
+a{
+  text-decoration: none;
+
+  &.grey{
+    color:#535353;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+  }
+
+  &.greyst2heading{
+    color:#535353;
+    font-weight: bold;
+  }
+  &.greyst2{
+    color:#535353;
+  }
+}
+
+.button-small {
+  font-size: 12px !important;
+  letter-spacing: 0.01em !important;
+  background: $base-blue;
+  @include border-radius(4px!important);
+  height: 44px;
+  color:#fff;
+  margin: 0 4px;
+  text-transform: uppercase;
+
+  &.custom-padding{
+    padding: 0 30px;
+  }
+
+  &.black{
+    background: #000 !important;
+  }
+
+  &.no-margin{
+    margin: 0;
+  }
+}
+
+.btn-icon-50{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  padding: 0 !important;
+  margin: 0 !important;
+  @include border-radius(0!important);
+
+  &.view{
+    background: url("../assets/images/icon-view-50-grey.png") no-repeat center center!important;
+    -webkit-background-size: 50px 50px!important;
+    background-size: 50px 50px!important;
+  }
+
+  &.login{
+    background: url("../assets/images/icon-login-customer-50-grey.png") no-repeat center center!important;
+    -webkit-background-size: 50px 50px!important;
+    background-size: 50px 50px!important;
+  }
+}
+
+
+.btn-icon-login{
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  padding: 0 !important;
+  margin: -22px 0 0 0 !important;
+  @include border-radius(0!important);
+  background: url("../assets/images/icon-login-customer-50-grey.png") no-repeat center center!important;
+  -webkit-background-size: 44px 44px!important;
+  background-size: 44px 44px!important;
+  top:50%;
+  right:18px;
+}
+
+
+
+.button-icon{
+  width: 100%;
+  height: 50px;
+  font-size: 12px!important;
+  font-weight:normal!important;
+  color: #000;
+  letter-spacing: 0.02em!important;
+  text-align: center;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  background:#fff !important;
+  @include border-radius(0);
+}
+
+.button-icon:hover{
+  @include border-radius(0);
+}
+
+.button-icon div.inner{
+  width: auto;
+  height: 14px;
+  margin-right:-3px;
+}
+
+.button-icon  .icon{
+  width: 14px;
+  height: 14px;
+  margin-right: 10px;
+  float: left;
+}
+
+.button-icon  div.label{
+  width: auto;
+  height: 8px;
+  line-height: 8px;
+  margin-top: 4px;
+  float: left;
+}
+
+.button-icon  div.label:hover{
+  background: #fff !important;
+}
+
+
+.button-icon.button-md {
+  margin: 0;
+  height: 50px;
+  border-radius: 0;
+  font-size: 14px;
+}
+
+
+.small-button {
+  position: relative;
+  overflow: hidden;
+  padding: 10px;
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 12px !important;
+  letter-spacing: 0.08em !important;
+  background: #00287a;
+  @include border-radius(4px!important);
+  height: 44px;
+  color: #fff;
+  margin: 0 !important;
+  width: 100%;
+}
+
+
+button.full{
+  width: 100%;
+  height: auto;
+  font-size: 12px!important;
+  font-weight: bold!important;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  text-align: center;
+  display: block;
+  padding: 0;
+  margin: 0;
+  @include border-radius(0);
+
+  &:hover{
+    @include border-radius(0);
+  }
+
+  span{
+    height: 50px;
+    line-height: 50px;
+  }
+}
+
+.btn-small.grey-medium{
+  background: #b5b5b5  !important;
+  color: #fff !important;
+  text-transform: uppercase;
+}
+
+.btn-small.grey-dark{
+  background: #868686  !important;
+  color: #fff !important;
+  text-transform: uppercase;
+}
+
+.btn-small.green{
+  background: #a0c56c  !important;
+  color: #fff !important;
+  text-transform: uppercase;
+}
+
+
+
+.button-list{
+  width:100%;
+  margin: 8px 0;
+  padding: 13px 10px;
+  background: $base-blue !important;
+  @include border-radius(4px);
+  box-sizing:border-box;
+  display: block;
+  text-transform: none;
+  letter-spacing:0;
+  color: black;
+
+  .button-inner{
+    text-align: left;
+    font-size: 14px;
+    display: block;
+  }
+
+  &.button, &.button:hover {
+    background: #ddf2ff !important;
+    font-size: 12px;
+    letter-spacing:0;
+    height: auto;
+    @include border-radius(4px);
+    -ms-box-shadow: 0 0 0 0 inset;
+    -o-box-shadow: 0 0 0 0 inset;
+    box-shadow: 0 0 0 0 inset;
+  }
+}
+
+
+.action-button{
+  width:auto;
+  margin:0;
+  padding: 5px 8px;
+  @include border-radius(0);
+  box-sizing:border-box;
+  letter-spacing:0;
+  color: white;
+  float: left;
+  text-transform: none;
+  background: #909090!important;
+  margin-left: 1px;
+
+  .button-inner{
+    text-align: left;
+    font-size: 12px;
+    display: block;
+  }
+
+  &.button, &.button:hover {
+    background: #909090!important;
+    font-size: 12px;
+    letter-spacing:0;
+    height: auto;
+    @include border-radius(0);
+    -ms-box-shadow: 0 0 0 0 inset;
+    -o-box-shadow: 0 0 0 0 inset;
+    box-shadow: 0 0 0 0 inset;
+  }
+}
+
+  .action-button-blue{
+    background: #1498e6 !important;
+  }
+
+
+.bar-button-md {
+  font-size: 2.5rem !important;
+}
+
+// Changes by DRD on 02/05/2017 for ios radio buttons to look alike android
+.radio-ios .radio-icon {
+    position: relative !important;
+    top: 0 !important;
+    left: 0 !important;
+    display: block !important;
+    margin: 0 !important;
+    width: 16px !important;
+    height: 16px !important;
+    border-width: 2px !important;
+    border-style: solid !important;
+    border-radius: 50% !important;
+    border-color: #787878 !important;
+
+    &.radio-checked{
+      border-color: #387ef5 !important;
+    }
+}    
+
+
+.radio-ios .radio-checked .radio-inner {
+  position: absolute !important;
+  top: 2px !important;
+  left: 2px !important;
+  width: 8px !important;
+  height: 8px !important;
+  border-radius: 50% !important;
+  background-color: #387ef5 !important;
+  border-width: 0px !important;
+}
